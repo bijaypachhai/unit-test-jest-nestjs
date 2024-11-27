@@ -4,4 +4,8 @@ export class CatsService {
     findAll(): string[] {
         return this.cats;
     }
+
+    findOne(prefix: string): string {
+        return `with prefix: ${prefix}`;
+    }
 }
